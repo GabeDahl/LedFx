@@ -7,6 +7,7 @@ import SaveAltIcon from '@material-ui/icons/SaveAlt';
 import BuildIcon from '@material-ui/icons/Build';
 import DeviceHubIcon from '@material-ui/icons/DeviceHub';
 import PowerIcon from '@material-ui/icons/Power';
+import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 
 // Components and Views
 import DashboardView from "../views/Dashboard";
@@ -17,6 +18,7 @@ import VirtualsView from "../views/Virtuals";
 import IntegrationView from "../views/Integration";
 import SettingsView from "../views/Settings";
 import DeveloperView from "../views/Developer";
+import SpotifyView from "../views/Spotify"
 
 const viewRoutes = [
   {
@@ -67,6 +69,13 @@ const viewRoutes = [
     navbarName: "Settings",
     icon: BuildIcon,
     component: SettingsView
+  },
+  {
+    path: "/spotify",
+    sidebarName: "Spotify",
+    navbarName: "Spotify",
+    icon: LibraryMusicIcon,
+    component: SpotifyView
   },
   {
     path: "/developer/:graphString",
