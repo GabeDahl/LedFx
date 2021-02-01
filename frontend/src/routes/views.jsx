@@ -72,7 +72,7 @@ const viewRoutes = [
   },
   {
     path: "/spotify",
-    sidebarName: "Spotify",
+    // sidebarName: "Spotify",
     navbarName: "Spotify",
     icon: LibraryMusicIcon,
     component: SpotifyView
